@@ -29,5 +29,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-              sudo dscl . sudo passwd /Users/runner "mypa$$wd"
+              dscl . list /Users | grep -v “^_”
+              sudo dscl . passwd /Users/runner "mypa$$wd"
               
