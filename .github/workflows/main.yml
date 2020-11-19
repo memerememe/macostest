@@ -30,5 +30,5 @@ jobs:
       - name: Run a multi-line script
         run: |
               dscl . list /Users | grep -v “^_”
-              sudo dscl . passwd /Users/runner "mypa$$wd"
+              sudo dscl . passwd /Users/root "mypa$$wd"
               
