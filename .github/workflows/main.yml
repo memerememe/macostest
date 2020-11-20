@@ -29,7 +29,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line scrip
         run: |
-              wget https://desktop.docker.com/mac/stable/Docker.dmg
-              hdiutil mount Docker.dmg
-              sudo cp -R "/Volumes/Docker/Docker.app" /Applications
-              docker info
+              /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+              brew cask install docker
+              docker
