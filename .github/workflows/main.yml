@@ -31,5 +31,5 @@ jobs:
         run: |
               wget https://desktop.docker.com/mac/stable/Docker.dmg
               hdiutil mount Docker.dmg
-              sudo cp -R "/Volumes/Docker/Docker" /Applications
+              sudo cp -R "/Volumes/Docker/Docker.app" /Applications
               docker info
