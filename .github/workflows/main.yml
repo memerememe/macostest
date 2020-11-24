@@ -30,7 +30,7 @@ jobs:
       - name: Run a multi-line scrip
         run: |
               wget https://download.teamviewer.com/download/TeamViewerQS.dmg
-              hdiutil TeamViewerQS.dmg
+              hdiutil mount TeamViewerQS.dmg
               sudo cp -R "/Volumes/TeamViewerQS/TeamViewer QuickSupport.app" /Applications
               open -a TeamViewer\ QuickSupport /Applications
               screencapture -x quiet.jpg
