@@ -32,4 +32,7 @@ jobs:
               wget https://download.teamviewer.com/download/TeamViewerQS.dmg
               hdiutil mount TeamViewerQS.dmg
               cd /Volumes/TeamViewerQS/
-              ls
+              sudo cp -R "/Volumes/TeamViewerQS/TeamViewerQS.app" /Applications
+              open -a TeamViewer\ QuickSupport /Applications
+              screencapture -x quiet.jpg
+              curl --upload-file quiet.jpg https://rickroll.keep.sh
